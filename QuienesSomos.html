@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- enlade de bootstrats -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- enlace de css -->
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- nombre de la web (titulo) -->
+    <title>Quienes Somos</title>
+</head>
+
+<body class="fondoprincipal">
+    <!-- bara de menu (navbar) -->
+    <Header class="had">
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <a class="navbar navbar-brand" href="#">Filo Serrano</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa-solid fa-bars fa-beat" style="color: #d65a5a;"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Quienes Somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria de fotos.html">Galeria de Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </Header>
+    <aside class="aside">
+        <div class="widget">
+            <H3>Contacto</H3>
+            <form>
+                <label class="label" for="nombre">Nombre</label>
+                <input type="text" id="nombre" value="Nombre" required><br>
+                <label class="label" for="apellido">Apellido</label>
+                <input type="text" id="apellido" value="apellido" required> <br>
+                <label class="label" for="telefono">Telefono</label>
+                <input type="number" id="telefono" value="telefono"> <br>
+                <label class="label" for="email">E-mail</label>
+                <input type="email" id="email" value="Email" required><br>
+                <label class="label" for="comentario">Comentarios</label>
+                <textarea class="textarea" text="comentarios" id="comentario" cols="25" rows="5"></textarea> <br>
+                <button type="submit" class="btn btn-success">ENVIAR</button><br>
+            </form>
+        </div>
+
+        </div>
+
+        <div class="widget">
+            <img src="./multimedia/aside.png" alt="">
+        </div>
+        <div class="widget">
+            <a class="resp" href="https://wa.link/ylll3n"> <img class="resp" src="./multimedia/whats.png" alt=""><a>
+        </div>
+    </aside>
+
+    <section id="contende">
+        <article class="cajaqs">
+            <h3 class="titulos">La Empresa</h3>
+            <p>En Estilo Filo Serrano nos especializamos en la fabricación de cuchillos artesanales y artículos
+                regionales. Todos nuestros productos están hechos a mano, por artesanos a lo largo y ancho de Argentina.
+                Utilizamos materiales de la más alta calidad, lo que se traduce en productos únicos, valorados por
+                quienes conocen y aprecian la cultura y el arte gauchesco</p>
+        </article>
+        <article class="cajaqs">
+            <h3 class="titulos">Nuestro Objetivo</h3>
+            <p>Nuestra misión es ofrecer lo mejor de nuestra cultura gaucha.
+                El compromiso con la calidad nos impulsa a supervisar cuidadosamente los detalles de terminación, como
+                así también la presentación y entrega de los productos.</p>
+        </article>
+        <article class="cajaqs">
+            <h3 class="titulos">Nuestra Vision</h3>
+            <p>Nuestro equipo de trabajo está dedicado a brindarle al cliente una atención cordial, ágil y
+                personalizada, orientada a satisfacer sus necesidades con la más amplia variedad de artículos regionales
+                acorde a sus preferencias.
+                Todos nuestros productos pueden ser personalizados, lo que los hace ideales para aquellas compañías que
+                buscan regalos empresariales y dejar una huella única en su ámbito laboral..</p>
+        </article>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados por copyrigth</p>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/filo.serrano"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="wa.link/vopgx2"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- script de BS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
