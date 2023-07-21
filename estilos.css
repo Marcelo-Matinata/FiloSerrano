@@ -1,5 +1,7 @@
 /* normalizador */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kotta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@500&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -29,9 +31,10 @@
 .jumbotron {
   background: url(./multimedia/img4.jpg);
   background-size: cover;
-  background-position: center;
-  color: rgb(255, 255, 255);
+  background-position: right;
+  color: rgb(186, 201, 161);
   text-shadow: 0 0 10px chocolate;
+  text-align: left;
 }
 
 .btn {
@@ -45,7 +48,8 @@
 }
 
 .fondoprincipal {
-  background-image: linear-gradient(to left, rgb(100, 123, 226), rgb(199, 161, 58));
+  background-image: url(./multimedia/fondof.svg);
+  background-size: cover;
 }
 
 .col {
@@ -55,16 +59,19 @@
 }
 
 .col p {
-  font-family: roboto;
-  font-size: 40px;
+  font-family: "Kotta One";
+  color: #ffffff;
+  font-size: 25px;
   text-transform: lowercase;
 }
 
 .col h3 {
-  color: black;
+  color: #ffffff;
   font-family: serif;
-  font-size: 45px;
+  font-size: 35px;
+  font-weight: 700;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .container-fluid {
@@ -135,8 +142,9 @@ section {
 }
 
 .card {
-  width: 30%;
-  background-color: rgba(43, 78, 20, 0.5058823529);
+  width: 100%;
+  background-image: url(./multimedia/blob-scene-haikei\ \(1\).svg);
+  background-size: cover;
   color: #020000;
   padding: 20px;
   border: 2px solid;
@@ -154,7 +162,7 @@ section {
 .card-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -162,7 +170,7 @@ section {
   color: rgb(255, 255, 255);
   width: 100%;
   height: 70px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   align-content: center;
   padding: 10px;
@@ -170,7 +178,6 @@ section {
 
 /* galeria de fotos */
 .main {
-  /* background-color: rgb(205, 157, 116); */
   text-align: center;
 }
 
@@ -179,9 +186,15 @@ section {
   height: auto;
   background-color: coral;
   display: grid;
-  background-color: aqua;
+  background-image: url(./multimedia/blob-scene-haikei\ \(1\).svg);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 200px);
+}
+
+.titulos {
+  font-size: serif;
+  font-size: 100px;
+  color: #ffffff;
 }
 
 .foto {
@@ -191,7 +204,7 @@ section {
 }
 
 .foto:hover {
-  background-size: 150%;
+  background-size: 140%;
 }
 
 .foto1 {
@@ -358,22 +371,34 @@ section {
 }
 /* contacto */
 .contactocaja {
+  width: 85%;
   border: 2px solid;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .textcontacto {
-  font-size: 40px;
+  width: 50%;
+  font-size: 30px;
   text-align: center;
-  font-family: monospace;
+  font-family: "Kotta One";
+  text-align: justify;
+  color: #ffffff;
 }
 
 .textcontacto h3 {
-  font-size: 70px;
+  font-family: serif;
+  text-align: center;
+  font-size: 30px;
   text-decoration: underline;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 form {
+  color: #ffffff;
+  width: 100%;
   font-size: 30px;
   text-align: center;
   justify-content: center;
@@ -384,4 +409,6 @@ form {
 .mapa {
   width: 100%;
   height: 100%;
-} /*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
